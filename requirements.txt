@@ -1,0 +1,11 @@
+aiogram
+peewee
+psycopg2-binary
+python-dotenv
+Pillow
+gspread
+google-auth
+aiohttp
+aiohttp-socks
+certifi
+truststore

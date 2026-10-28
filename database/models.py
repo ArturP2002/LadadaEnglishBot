@@ -2,6 +2,7 @@ import logging
 from datetime import datetime
 
 from peewee import (
+    BigIntegerField,
     BooleanField,
     CharField,
     DateTimeField,
@@ -33,7 +34,7 @@ class BaseModel(Model):
 class User(BaseModel):
     """Модель пользователя"""
 
-    user_id = IntegerField(unique=True, primary_key=True)
+    user_id = BigIntegerField(unique=True, primary_key=True)
     username = CharField(null=True)
     first_name = CharField(null=True)
     last_name = CharField(null=True)
